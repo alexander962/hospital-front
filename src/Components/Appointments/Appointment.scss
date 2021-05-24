@@ -1,0 +1,43 @@
+.Appointment {
+  max-height: 100vh;
+}
+
+.outBtn {
+  padding: 20px;
+  margin-left: 5vw;
+  background: rgba($color: #000000, $alpha: 0);
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.indent {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .indent {
+    display: block;
+    height: 10px;
+  }
+}
+
+@media (min-width: 600px) {
+  div.MuiContainer-fixed {
+      max-width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .outBtn {
+    margin-left: 0;
+    padding: 15px;
+  }
+}

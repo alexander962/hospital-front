@@ -1,0 +1,105 @@
+.Information-shadow {
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 95px;
+}
+
+.Information {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 24px 0;
+
+  &_block {
+    width: 20%;
+    text-align: left;
+  }
+}
+
+p.MuiTypography-root.Information-Text {
+  font-size: 20px;
+}
+
+.MuiTextField-root {
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+}
+
+button#addBtn.MuiButton-root {
+  height: 0;
+  padding: 28px 24px;
+  background: white;
+  text-transform: inherit;
+  font-size: 20px;
+}
+
+button#hideBtn.MuiButton-root {
+  display: none;
+  height: 0;
+  padding: 28px 24px;
+  background: white;
+  text-transform: inherit;
+  font-size: 20px;
+  line-height: 0;
+}
+
+@media (max-width: 1024px) {
+  .Information {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &_block {
+      width: 100%;
+    }
+
+    &_btns {
+      display: flex;
+      align-items: center;
+    }
+
+    &_btn {
+      padding: 10px 0;
+    }
+  }
+
+  button#addInfoBlockBtn.MuiButton-root{
+    background-color: white;
+  }
+
+  button#addBtn.MuiButton-root {
+    margin-top: 20px;
+  }
+
+  button#hideBtn.MuiButton-root {
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (width: 1024px) {
+  .Information {
+    padding-top: 100px;
+    &_btn {
+      margin-top: 180px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .Information {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+
+    &_block {
+      width: 100%;
+    }
+
+    &_btn {
+      margin-top: 150px;
+    }
+  }
+}

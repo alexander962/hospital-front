@@ -1,0 +1,203 @@
+.Sort {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 22px 0;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 10px;
+
+  &_block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 24px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    & .MuiTextField-root {
+      width: 16vw;
+      margin-left: 10px;
+    }
+  }
+
+  &_direct {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 20px;
+
+    & .MuiTextField-root {
+      width: 16vw;
+      margin-left: 10px;
+    }
+  }
+}
+
+p.Sort-text {
+  font-size: 20px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+
+  &_img {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  &-date {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4px;
+
+    &_from {
+      display: flex;
+      width: 30%;
+    }
+  }
+
+  &-btn_block {
+    display: flex;
+    align-items: center;
+  }
+}
+
+#filter-btn {
+  height: 0;
+  padding: 28px 60px;
+  background: white;
+}
+
+p.filter-date_text.MuiTypography-root {
+  margin-right: 10px;
+}
+
+@media (max-width: 1124px) {
+  .Sort {
+    width: 100%;
+  }
+
+  p.Sort-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Sort {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 0 0 0;
+    margin-bottom: 10px;
+
+    &_block {
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 10px;
+
+      & .MuiTextField-root {
+        width: 75%;
+        margin-left: 10px;
+      }
+    }
+
+    &_direct {
+      justify-content: space-between;
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 10px;
+
+      & .MuiTextField-root {
+        width: 75%;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .filter {
+    margin-left: 0;
+
+    &-date {
+      width: 100%;
+    }
+  }
+
+
+}
+
+@media (max-width: 800px) {
+  .Sort {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 24px;
+    margin-bottom: 10px;
+
+    &_block {
+      flex-direction: column;
+
+      & .MuiTextField-root {
+        width: 100%;
+        margin-left: 10px;
+      }
+    }
+
+    &_direct {
+      flex-direction: column;
+
+      & .MuiTextField-root {
+        width: 100%;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  p.Sort-text {
+    font-size: 24px;
+  }
+
+  #filter-btn {
+    padding: 24px 10px;
+  }
+  
+  .filter {
+    &_img {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .filter {
+  
+    &_img {
+      margin-left: 30px;
+    }
+  
+    &-date {
+      display: flex;
+      flex-direction: column;
+  
+      &_from {
+        display: flex;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  p.Sort-text {
+    font-size: 20px;
+  }
+}

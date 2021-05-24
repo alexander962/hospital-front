@@ -1,0 +1,60 @@
+.Header {
+  &-block {
+    display: flex;
+    align-items: center;
+  }
+
+  &-appBar.MuiAppBar-colorPrimary {
+    background: #c5e9ff;
+    padding: 10px;
+  }
+
+  &-logoText.MuiTypography-root {
+    margin-left: 75px;
+    color: black;
+    font-size: 36px;
+  }
+}
+
+div.MuiToolbar-regular {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media (width: 1024px) {
+  .Header {
+    &-appBar.MuiAppBar-colorPrimary {
+      background: #c5e9ff;
+      padding: 50px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  p.Header-logoText.MuiTypography-root {
+    margin: 0;
+    font-size: 28px;
+    margin-left: 0;
+    margin-bottom: 15px;
+    margin-left: 20px;
+  }
+
+  .Header-logoText.MuiTypography-root {
+    margin-left: 0;
+  }
+
+  div.toolbar.MuiToolbar-root {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+  }
+}
